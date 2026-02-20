@@ -325,7 +325,7 @@ a { color: inherit; text-decoration: none; }
 .video-thumb {
   position: relative;
   aspect-ratio: 16/10;
-  background: #14161c url('../img/thumbnail.png') center/cover no-repeat;
+  background: #14161c url('../img/thumbnail.gif') center/cover no-repeat;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   overflow: hidden;
