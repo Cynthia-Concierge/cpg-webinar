@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <!-- Calendly popup widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 <body>
   <header class="header">
@@ -18,29 +21,20 @@
 
   <main class="watch-page">
     <div class="watch-page-inner">
-      <!-- Replace the div below with your video embed (YouTube, Vimeo, or HTML5 video) -->
+      <!-- Video placeholder — replace with YouTube/Vimeo embed once uploaded -->
       <div class="watch-video-wrap">
         <div class="watch-video-placeholder">
-          <p>Replace this with your video embed</p>
-          <p class="watch-video-hint">e.g. YouTube iframe, Vimeo, or &lt;video&gt; source</p>
+          <p>Masterclass video coming soon</p>
+          <p class="watch-video-hint">The full 3-hour replay will appear here</p>
         </div>
-        <!-- Example YouTube embed (uncomment and set your video ID):
-        <iframe
-          src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=0"
-          title="Masterclass"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        -->
       </div>
 
       <div class="watch-cta">
-        <!-- Set href to your Calendly, Cal.com, or booking page URL -->
-        <a href="#" class="btn btn-cta btn-large watch-cta-btn" id="book-call-btn">
-          Schedule a phone call
-        </a>
-        <p class="watch-cta-note">Pick a time that works for you.</p>
+        <h2 class="watch-cta-title">Book Your Free Fundraising Readiness Assessment</h2>
+        <p class="watch-cta-desc">30 minutes with a member of Jeff's team to review where you stand and what it would take to get investor-ready.</p>
+        <button type="button" class="btn btn-cta btn-large watch-cta-btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/joshua-teamchurch/30min'});return false;">
+          Book your free assessment →
+        </button>
       </div>
     </div>
   </main>
