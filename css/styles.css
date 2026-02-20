@@ -1,23 +1,24 @@
-/* ----- AI software theme ----- */
+/* ----- Dream Makers brand theme ----- */
 :root {
-  --bg: #0a0a0f;
-  --bg-elevated: #12121a;
-  --bg-card: #16161f;
-  --bg-card-hover: #1a1a24;
-  --border: rgba(255, 255, 255, 0.06);
-  --border-accent: rgba(0, 212, 255, 0.25);
-  --text: #f0f0f5;
-  --text-muted: #8b8b9e;
-  --text-dim: #5c5c6e;
-  --accent: #00d4ff;
-  --accent-hover: #33ddff;
-  --accent-soft: rgba(0, 212, 255, 0.12);
-  --accent-glow: rgba(0, 212, 255, 0.2);
-  --check: #00c9a7;
+  --bg: #0b0e17;
+  --bg-elevated: #111627;
+  --bg-card: #151a2e;
+  --bg-card-hover: #1a2038;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-accent: rgba(26, 111, 176, 0.35);
+  --text: #f5f5f8;
+  --text-muted: #9da3b8;
+  --text-dim: #636a82;
+  --accent: #1A6FB0;
+  --accent-hover: #2483cc;
+  --accent-soft: rgba(26, 111, 176, 0.15);
+  --accent-glow: rgba(26, 111, 176, 0.25);
+  --check: #1A6FB0;
+  --gold: #D4A843;
   --font: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --radius: 10px;
   --radius-sm: 6px;
-  --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
   --shadow-glow: 0 0 40px var(--accent-glow);
 }
 
@@ -188,7 +189,7 @@ a { color: inherit; text-decoration: none; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(10, 10, 15, 0.85);
+  background: rgba(11, 14, 23, 0.9);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(12px);
 }
@@ -217,7 +218,7 @@ a { color: inherit; text-decoration: none; }
 /* ----- Hero ----- */
 .hero {
   padding: 56px 24px 72px;
-  background: radial-gradient(ellipse 80% 50% at 50% -10%, var(--accent-soft), transparent 60%);
+  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(26, 111, 176, 0.1), transparent 60%);
 }
 .hero-inner {
   max-width: 1200px;
@@ -241,16 +242,16 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent);
-  background: var(--accent-soft);
-  border: 1px solid var(--border-accent);
+  color: var(--gold);
+  background: rgba(212, 168, 67, 0.1);
+  border: 1px solid rgba(212, 168, 67, 0.3);
   border-radius: var(--radius-sm);
 }
 .badge::before {
   content: '';
   width: 6px;
   height: 6px;
-  background: var(--accent);
+  background: var(--gold);
   border-radius: 50%;
   animation: pulse 2s ease-in-out infinite;
 }
@@ -267,15 +268,15 @@ a { color: inherit; text-decoration: none; }
   color: var(--text);
 }
 .hero-headline-accent {
-  color: var(--accent);
+  color: var(--gold);
   display: inline;
-  background: linear-gradient(180deg, transparent 60%, var(--accent-soft) 60%);
+  background: linear-gradient(180deg, transparent 60%, rgba(212, 168, 67, 0.12) 60%);
 }
 .hero-sub {
   margin: 0 0 24px;
   font-size: 16px;
   font-style: italic;
-  color: var(--accent);
+  color: var(--gold);
   max-width: 520px;
   line-height: 1.6;
 }
@@ -334,8 +335,8 @@ a { color: inherit; text-decoration: none; }
 }
 .video-thumb:hover {
   transform: translateY(-4px);
-  border-color: rgba(0, 212, 255, 0.35);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 212, 255, 0.15), 0 0 48px var(--accent-glow);
+  border-color: rgba(26, 111, 176, 0.4);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(26, 111, 176, 0.2), 0 0 48px var(--accent-glow);
 }
 .video-thumb:focus-visible {
   outline: 2px solid var(--accent);
@@ -405,19 +406,19 @@ a { color: inherit; text-decoration: none; }
 .play-icon {
   width: 88px;
   height: 88px;
-  background: #21a5e0;
+  background: var(--accent);
   border-radius: 50%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 0 0 rgba(33, 165, 224, 0.5);
+  box-shadow: 0 0 0 0 rgba(26, 111, 176, 0.5);
   transition: transform 0.25s ease, background 0.25s, box-shadow 0.35s ease;
 }
 .video-thumb:hover .play-icon {
   transform: scale(1.08);
-  background: #2bb3f0;
-  box-shadow: 0 0 0 8px rgba(33, 165, 224, 0.25), 0 8px 32px rgba(33, 165, 224, 0.35);
+  background: var(--accent-hover);
+  box-shadow: 0 0 0 8px rgba(26, 111, 176, 0.25), 0 8px 32px rgba(26, 111, 176, 0.35);
 }
 .play-triangle {
   width: 0;
@@ -425,7 +426,7 @@ a { color: inherit; text-decoration: none; }
   margin-left: 6px;
   border-top: 14px solid transparent;
   border-bottom: 14px solid transparent;
-  border-left: 24px solid #0a0a0f;
+  border-left: 24px solid #fff;
 }
 .play-text {
   font-size: 14px;
@@ -664,7 +665,7 @@ a { color: inherit; text-decoration: none; }
   text-align: left;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-left: 4px solid var(--accent);
+  border-left: 4px solid var(--gold);
   border-radius: 0 var(--radius) var(--radius) 0;
 }
 .who-title {
